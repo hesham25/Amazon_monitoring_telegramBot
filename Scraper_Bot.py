@@ -9,19 +9,19 @@ from scraper_api import ScraperAPIClient
 
 class AmazonScraper(object):
     """
-    docstring for AmazonScraper Class
+    docstring for AmazonScraper Class to Scrape Amazon.com.tr
     """
     def __init__(self, API_KEY):
         self.sleep_time = 5 # Minutes
-        self.API_KEY = API_KEY
+        self.API_KEY = API_KEY  # ScraperAPI Proxies
     
         self.bot_1 = telegram.Bot(<token 1>) # Bot 1
         self.bot_2 = telegram.Bot(<token 2>) # Bot 2
         self.bot_3 = telegram.Bot(<token 3>) # Bot 3
         self.bot_4 = telegram.Bot(<token 4>) # Bot 4
         
-        self.ADMIN_LIST = [<>]                           # Admin Chat ID
-        self.test_group_chat_id  = <>                    # Group Chat ID
+        self.ADMIN_LIST = [<int>]                           # Admin Chat ID
+        self.test_group_chat_id  = <int>                    # Group Chat ID
         
         self.db_name = os.getcwd() + './data/Amazon Database.db'                  # DataBase Name
         self.txt_file = open((os.getcwd() + './data/categories links.txt'),'r')  # category links text file
